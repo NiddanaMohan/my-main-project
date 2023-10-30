@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+</head>
+<body>
+  <h1>Login</h1>
+  
+  <div class="box">
+    <form action="process_login.php" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" minlength="3" maxlength="15" required><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" minlength="5" maxlength="20" required><br>
+
+      <button type="submit" onclick="log()">Login</button>
+    </form>
+  </div>
+  <script>
+    function log() {
+
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      if (username == "mohan" && password == "mohan123") {
+        window.location.href = "afterlogin.html";
+        alert('login success');
+      }
+      else {
+        alert('not a valid information');
+
+      }
+    }
+
+
+
+  </script>
+</body>
+
+</html>

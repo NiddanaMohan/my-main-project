@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>medical page</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>Welcome to Our Website</h1>
+  </div>
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+  </div>
+  <div class="card-container">
+    <div class="row">
+      <div class="card">
+        <img src="th.jpg" alt="Image">
+        <h2 class="headline">Card Headline</h2>
+        <div class="popup-card" id="reasonCard1">
+          <h2>Reason for Selected Options</h2>
+          <p id="reasonText">Reason text goes here.</p>
+          <button onclick="closePopupCard1()">Close</button>
+        </div>
+
+        <div class="options">
+          <label for="option1">
+            <input type="checkbox" id="option1" name="options" value="option1"> Option 1
+          </label>
+
+          <label for="option2">
+            <input type="checkbox" id="option2" name="options" value="option2"> Option 2
+          </label>
+
+          <label for="option3">
+            <input type="checkbox" id="option3" name="options" value="option3"> Option 3
+          </label>
+        </div>
+
+        <button class="submit-button" onclick="checkSelection1()">Submit</button>
+        <div id="reason"></div>
+      </div>
+      <div class="card">
+        <img src="th.jpg" alt="Image">
+        <h2 class="headline">Card Headline</h2>
+        <div class="popup-card" id="reasonCard2">
+          <h2>Reason for Selected Options</h2>
+          <p id="reasonText2">Reason text goes here.</p>
+          <button onclick="closePopupCard2()">Close</button>
+        </div>
+
+        <div class="options">
+          <label for="option1">
+            <input type="checkbox" id="option4" name="options" value="option1"> Option 1
+          </label>
+
+          <label for="option2">
+            <input type="checkbox" id="option5" name="options" value="option2"> Option 2
+          </label>
+
+          <label for="option3">
+            <input type="checkbox" id="option6" name="options" value="option3"> Option 3
+          </label>
+        </div>
+
+        <button class="submit-button" onclick="checkSelection2()">Submit</button>
+        <div id="reason"></div>
+      </div>
+      <div class="card">
+        <img src="th.jpg" alt="Image">
+        <h2 class="headline">Card Headline</h2>
+        <div class="popup-card" id="reasonCard3">
+          <h2>Reason for Selected Options</h2>
+          <p id="reasonText3">Reason text goes here.</p>
+          <button onclick="closePopupCard3()">Close</button>
+        </div>
+
+        <div class="options">
+          <label for="option1">
+            <input type="checkbox" id="option7" name="options" value="option1"> Option 1
+          </label>
+
+          <label for="option2">
+            <input type="checkbox" id="option8" name="options" value="option2"> Option 2
+          </label>
+
+          <label for="option3">
+            <input type="checkbox" id="option9" name="options" value="option3"> Option 3
+          </label>
+        </div>
+
+        <button class="submit-button" onclick="checkSelection3()">Submit</button>
+        <div id="reason"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card">
+        <img src="th.jpg" alt="Image">
+        <h2 class="headline">Card Headline</h2>
+        <div class="popup-card" id="reasonCard4">
+          <h2>Reason for Selected Options</h2>
+          <p id="reasonText4">Reason text goes here.</p>
+          <button onclick="closePopupCard4()">Close</button>
+        </div>
+
+        <div class="options">
+          <label for="option1">
+            <input type="checkbox" id="option10" name="options" value="option1"> Option 1
+          </label>
+
+          <label for="option2">
+            <input type="checkbox" id="option11" name="options" value="option2"> Option 2
+          </label>
+
+          <label for="option3">
+            <input type="checkbox" id="option12" name="options" value="option3"> Option 3
+          </label>
+        </div>
+
+        <button class="submit-button" onclick="checkSelection4()">submit</button>
+        <div id="reason"></div>
+      </div>
+      <div class="card">
+        <img src="th.jpg" alt="Image">
+        <h2 class="headline">Card Headline</h2>
+        <div class="popup-card" id="reasonCard5">
+          <h2>Reason for Selected Options</h2>
+          <p id="reasonText5">Reason text goes here.</p>
+          <button onclick="closePopupCard5()">Close</button>
+        </div>
+
+        <div class="options">
+          <label for="option1">
+            <input type="checkbox" id="option13" name="options" value="option1"> Option 1
+          </label>
+
+          <label for="option2">
+            <input type="checkbox" id="option14" name="options" value="option2"> Option 2
+          </label>
+
+          <label for="option3">
+            <input type="checkbox" id="option15" name="options" value="option3"> Option 3
+          </label>
+        </div>
+
+        <button class="submit-button" onclick="checkSelection5()">Submit</button>
+        <div id="reason"></div>
+      </div>
+      <div class="card">
+        <img src="th.jpg" alt="Image">
+        <h2 class="headline">Card Headline</h2>
+        <div class="popup-card" id="reasonCard6">
+          <h2>Reason for Selected Options</h2>
+          <p id="reasonText6">Reason text goes here.</p>
+          <button onclick="closePopupCard6()">Close</button>
+        </div>
+
+        <div class="options">
+          <label for="option1">
+            <input type="checkbox" id="option16" name="options" value="option1"> Option 1
+          </label>
+
+          <label for="option2">
+            <input type="checkbox" id="option17" name="options" value="option2"> Option 2
+          </label>
+
+          <label for="option3">
+            <input type="checkbox" id="option18" name="options" value="option3"> Option 3
+          </label>
+        </div>
+
+        <button class="submit-button" onclick="checkSelection6()">Submit</button>
+        <div id="reason"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function checkSelection1() {
+      const option1 = document.getElementById('option1').checked;
+      const option2 = document.getElementById('option2').checked;
+      const option3 = document.getElementById('option3').checked;
+
+      if (!(option1 || option2 || option3)) {
+        const reasonText = document.getElementById('reasonText');
+        reasonText.textContent = 'Reason for no selection.';
+        const reasonCard = document.getElementById('reasonCard1');
+        reasonCard.classList.add('active');
+      } else if ((option1 && option2) || (option2 && option3)) {
+        const reasonText = document.getElementById('reasonText');
+        reasonText.textContent = 'Reason for selecting multiple options.';
+        const reasonCard = document.getElementById('reasonCard1');
+        reasonCard.classList.add('active');
+      } else {
+        const reasonCard = document.getElementById('reasonCard1');
+        reasonCard.classList.remove('active');
+      }
+    }
+
+    function closePopupCard1() {
+      const reasonCard = document.getElementById('reasonCard1');
+      reasonCard.classList.remove('active');
+    }
+    function checkSelection2() {
+      const option1 = document.getElementById('option4').checked;
+      const option2 = document.getElementById('option5').checked;
+      const option3 = document.getElementById('option6').checked;
+
+      if (!(option1 || option2 || option3)) {
+        const reasonText2 = document.getElementById('reasonText2');
+        reasonText2.textContent = 'Reason for no selection.';
+        const reasonCard2 = document.getElementById('reasonCard2');
+        reasonCard2.classList.add('active');
+      } else if ((option4 && option5) || (option5 && option6)) {
+        const reasonText2 = document.getElementById('reasonText2');
+        reasonText2.textContent = 'Reason for selecting multiple options.';
+        const reasonCard2 = document.getElementById('reasonCard2');
+        reasonCard2.classList.add('active');
+      } else {
+        const reasonCard2 = document.getElementById('reasonCard2');
+        reasonCard2.classList.remove('active');
+      }
+    }
+
+    function closePopupCard2() {
+      const reasonCard = document.getElementById('reasonCard2');
+      reasonCard.classList.remove('active');
+    }
+    function checkSelection3() {
+      const option1 = document.getElementById('option7').checked;
+      const option2 = document.getElementById('option8').checked;
+      const option3 = document.getElementById('option9').checked;
+
+      if (!(option1 || option2 || option3)) {
+        const reasonText = document.getElementById('reasonText3');
+        reasonText.textContent = 'Reason for no selection.';
+        const reasonCard = document.getElementById('reasonCard3');
+        reasonCard.classList.add('active');
+      } else if ((option7 && option8) || (option8 && option9)) {
+        const reasonText = document.getElementById('reasonText3');
+        reasonText.textContent = 'Reason for selecting multiple options.';
+        const reasonCard = document.getElementById('reasonCard3');
+        reasonCard.classList.add('active');
+      } else {
+        const reasonCard = document.getElementById('reasonCard3');
+        reasonCard.classList.remove('active');
+      }
+    }
+
+    function closePopupCard3() {
+      const reasonCard = document.getElementById('reasonCard3');
+      reasonCard.classList.remove('active');
+    }
+    function checkSelection4() {
+      const option1 = document.getElementById('option10').checked;
+      const option2 = document.getElementById('option11').checked;
+      const option3 = document.getElementById('option12').checked;
+
+      if (!(option1 || option2 || option3)) {
+        const reasonText = document.getElementById('reasonText4');
+        reasonText.textContent = 'Reason for no selection.';
+        const reasonCard = document.getElementById('reasonCard4');
+        reasonCard.classList.add('active');
+      } else if ((option10 && option11) || (option11 && option12)) {
+        const reasonText = document.getElementById('reasonText4');
+        reasonText.textContent = 'Reason for selecting multiple options.';
+        const reasonCard = document.getElementById('reasonCard4');
+        reasonCard.classList.add('active');
+      } else {
+        const reasonCard = document.getElementById('reasonCard4');
+        reasonCard.classList.remove('active');
+      }
+    }
+
+    function closePopupCard4() {
+      const reasonCard = document.getElementById('reasonCard4');
+      reasonCard.classList.remove('active');
+    }
+    function checkSelection5() {
+      const option1 = document.getElementById('option13').checked;
+      const option2 = document.getElementById('option14').checked;
+      const option3 = document.getElementById('option15').checked;
+
+      if (!(option1 || option2 || option3)) {
+        const reasonText = document.getElementById('reasonText5');
+        reasonText.textContent = 'Reason for no selection.';
+        const reasonCard = document.getElementById('reasonCard5');
+        reasonCard.classList.add('active');
+      } else if ((option13 && option14) || (option14 && option15)) {
+        const reasonText = document.getElementById('reasonText5');
+        reasonText.textContent = 'Reason for selecting multiple options.';
+        const reasonCard = document.getElementById('reasonCard5');
+        reasonCard.classList.add('active');
+      } else {
+        const reasonCard = document.getElementById('reasonCard5');
+        reasonCard.classList.remove('active');
+      }
+    }
+
+    function closePopupCard5() {
+      const reasonCard = document.getElementById('reasonCard5');
+      reasonCard.classList.remove('active');
+    }
+    function checkSelection6() {
+      const option1 = document.getElementById('option16').checked;
+      const option2 = document.getElementById('option17').checked;
+      const option3 = document.getElementById('option18').checked;
+
+      if (!(option1 || option2 || option3)) {
+        const reasonText = document.getElementById('reasonText6');
+        reasonText.textContent = 'Reason for no selection.';
+        const reasonCard = document.getElementById('reasonCard6');
+        reasonCard.classList.add('active');
+      } else if ((option16 && option17) || (option17 && option18)) {
+        const reasonText = document.getElementById('reasonText6');
+        reasonText.textContent = 'Reason for selecting multiple options.';
+        const reasonCard = document.getElementById('reasonCard6');
+        reasonCard.classList.add('active');
+      } else {
+        const reasonCard = document.getElementById('reasonCard6');
+        reasonCard.classList.remove('active');
+      }
+    }
+
+    function closePopupCard6() {
+      const reasonCard = document.getElementById('reasonCard6');
+      reasonCard.classList.remove('active');
+    }
+  </script>
+</body>
+
+</html>
